@@ -1,3 +1,7 @@
+0_RENDER_FILES/
+1_CROPPED_FILES/
+output.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
