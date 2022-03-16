@@ -1,12 +1,30 @@
 # render-slitscan
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+## Requirements
+
+##Usage
+```
+>>> python3 SLITSCAN.py -h
+usage: SLITSCAN.py [-h] [-r] [-o .] input_dir width height
+
+positional arguments:
+  input_dir             input folder
+  width                 Width of the resulting image.
+  height                Height of each slice
+
+options:
+  -h, --help            show this help message and exit
+  -r, --reverse
+  -o ., --output-dir .  Optional output directory
+```
+
 ## Notes
 - This app only supports PNG-images as input. Therefore it should be at the very end of your post-processing workflow.
 
 ## Roadmap
 - Different orders (left-to-right, right-to-left, top-to-bottom, bottom-to-top)
-- example scenes for common 
+- example scenes for common render engines
 
 ## License
 This work is licensed under a
