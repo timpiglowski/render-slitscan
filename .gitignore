@@ -1,6 +1,5 @@
-0_RENDER_FILES/
-1_CROPPED_FILES/
-output.png
+*.png
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

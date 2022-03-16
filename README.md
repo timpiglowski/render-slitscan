@@ -1,10 +1,10 @@
 # render-slitscan
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa] [![status: hibernate](https://github.com/GIScience/badges/raw/master/status/hibernate.svg)](https://github.com/GIScience/badges#hibernate)
 
-## Requirements
+A python script to generate a [slit-scan](https://en.wikipedia.org/wiki/Slit-scan_photography) animation from a PNG sequence.
 
-##Usage
-```
+## Usage
+```python
 >>> python3 SLITSCAN.py -h
 usage: SLITSCAN.py [-h] [-r] [-o .] input_dir width height
 
@@ -18,6 +18,13 @@ options:
   -r, --reverse
   -o ., --output-dir .  Optional output directory
 ```
+
+- `input` is the path to the folder containing the PNG sequence
+- `width` will be the width of the finished image. Normally this is the same as all your source image's width
+- `height` is the height of each slice. The lower this value is, the better the "resolution" of the finished image will be.
+- `reverse` will reverse the building direction of the image
+- `output-dir` is used to set a different output path than the project folder
+Example: `python3 SLITSCAN.py -h`
 
 ## Notes
 - This app only supports PNG-images as input. Therefore it should be at the very end of your post-processing workflow.
@@ -35,5 +42,3 @@ This work is licensed under a
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
-
-The full license text can be found [LICENSE.md](here).
